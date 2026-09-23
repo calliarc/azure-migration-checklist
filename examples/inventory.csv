@@ -1,0 +1,9 @@
+name,os,version,cpu,ram_gb,disk_gb,public_ip,tags,backup,environment,avg_cpu_percent
+web-01,Windows Server,2019,4,16,256,,owner=web-team;cost-center=CC100,yes,prod,35
+web-02,Windows Server,2012 R2,4,16,256,203.0.113.10,owner=web-team;cost-center=CC100,yes,prod,28
+app-01,Ubuntu,20.04,8,32,512,,owner=app-team;cost-center=CC200,yes,prod,22
+app-02,Ubuntu,22.04,8,32,512,,owner=app-team,no,dev,4
+db-01,Red Hat Enterprise Linux,8.9,16,128,4096,,owner=dba;cost-center=CC300,yes,prod,55
+db-legacy,CentOS,7.9,96,768,40000,198.51.100.25,owner=dba,no,prod,6
+file-01,Windows Server,2016,2,8,2048,,cost-center=CC400,unknown,test,
+analytics-01,Debian,12,16,64,1024,,owner=data;cost-center=CC500,yes,staging,48

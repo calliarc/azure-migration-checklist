@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "azmigrate-check"
+version = "0.1.0"
+description = "Azure migration readiness assessment: flags blockers in a server inventory or a live Azure subscription."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "CalliArc" }]
+keywords = ["azure", "migration", "cloud", "assessment", "readiness"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: System :: Systems Administration",
+]
+dependencies = []
+
+[project.optional-dependencies]
+azure = [
+    "azure-identity>=1.15",
+    "azure-mgmt-compute>=30.0",
+    "azure-mgmt-network>=25.0",
+]
+dev = ["pytest>=7", "ruff>=0.4"]
+
+[project.scripts]
+azmigrate-check = "azmigrate_check.cli:main"
+
+[project.urls]
+Homepage = "https://www.calliarc.com/"
+Repository = "https://github.com/calliarc/azure-migration-checklist"
+Issues = "https://github.com/calliarc/azure-migration-checklist/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]

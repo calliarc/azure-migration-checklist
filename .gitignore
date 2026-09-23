@@ -27,3 +27,7 @@ Thumbs.db
 .vscode/*
 !.vscode/extensions.json
 *.swp
+
+# Generated reports
+/report.md
+/report.html

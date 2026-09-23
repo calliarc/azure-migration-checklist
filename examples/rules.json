@@ -1,0 +1,15 @@
+{
+  "$comment": "Example rules config. All keys are optional; omitted keys use built-in defaults.",
+  "required_tags": ["owner", "environment", "cost-center"],
+  "eol_warning_days": 365,
+  "max_vcpu": 64,
+  "max_ram_gb": 512,
+  "max_disk_gb": 32767,
+  "underutilized_cpu_percent": 10,
+  "production_environments": ["prod", "production"],
+  "severity_overrides": {"NET001": "blocker"},
+  "disabled_rules": [],
+  "os_lifecycle": {
+    "windows-server:2012 r2": "2023-10-10"
+  }
+}

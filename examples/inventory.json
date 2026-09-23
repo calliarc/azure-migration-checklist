@@ -1,0 +1,64 @@
+{
+  "$comment": "SAMPLE DATA - fictional servers for demonstration only. IPs use RFC 5737 documentation ranges.",
+  "servers": [
+    {
+      "name": "jump-01",
+      "os": "Windows Server",
+      "version": "2022",
+      "cpu": 2,
+      "ram_gb": 8,
+      "disk_gb": 128,
+      "public_ip": "203.0.113.50",
+      "tags": {
+        "owner": "platform",
+        "environment": "prod",
+        "cost-center": "CC900"
+      },
+      "backup": true
+    },
+    {
+      "name": "build-01",
+      "os": "Ubuntu",
+      "version": "24.04",
+      "cpu": 8,
+      "ram_gb": 32,
+      "disk_gb": 512,
+      "public_ip": "",
+      "tags": {
+        "owner": "devops",
+        "environment": "dev",
+        "cost-center": "CC901"
+      },
+      "backup": false,
+      "avg_cpu_percent": 12
+    },
+    {
+      "name": "erp-01",
+      "os": "SUSE Linux Enterprise Server",
+      "version": "12 SP5",
+      "cpu": 32,
+      "ram_gb": 256,
+      "disk_gb": 8192,
+      "tags": {
+        "owner": "erp-team",
+        "environment": "prod",
+        "cost-center": "CC902"
+      },
+      "backup": true
+    },
+    {
+      "name": "legacy-ftp",
+      "os": "Windows Server",
+      "version": "2008 R2",
+      "cpu": 2,
+      "ram_gb": 4,
+      "disk_gb": 500,
+      "public_ip": "198.51.100.7",
+      "tags": {
+        "owner": "ops"
+      },
+      "backup": false,
+      "environment": "prod"
+    }
+  ]
+}
