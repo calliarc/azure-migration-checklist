@@ -5,7 +5,7 @@ Azure migration readiness checklist and assessment script that flags blockers be
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 ![Status: in development](https://img.shields.io/badge/status-in%20development-orange)
 
-> **Status:** in active development. Star or watch the repo to follow progress.
+> **Status:** in active development. Star or watch the repo to follow progress. 
 
 ## Features
 
